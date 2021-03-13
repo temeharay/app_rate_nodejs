@@ -1,11 +1,8 @@
 const express = require('express');
 
 const app = express();
+const apiController = require('./api/routes/controller');
 
-app.use((req, res, next) => {
-    res.status(200).json({
-        message: 'app rate node js'
-    });
-});
+app.use('/api', apiController);
 
 module.exports = app;

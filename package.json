@@ -4,6 +4,9 @@
   "description": "rate api node js version",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "local": "PORT=8081 env_name=local node server.js",
+    "dev": "PORT=8080 env_name=dev node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,6 +18,7 @@
   "author": "temaharay",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   }
 }

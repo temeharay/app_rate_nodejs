@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "local": "PORT=8081 env_name=local node server.js",
-    "dev": "PORT=8080 env_name=dev node server.js",
+    "local": "PORT=8081 env_name=local app_name=rate_nodejs node server.js",
+    "dev": "PORT=8080 env_name=dev app_name=rate_nodejs node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
